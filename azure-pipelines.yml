@@ -59,7 +59,7 @@ stages:
         azureSubscription: 'Free Trial(1)(75ec71dc-2d2f-4c3e-b30b-e09eaef127a0)'
         azureResourceGroup: 'bootstraper-rg'
         kubernetesCluster: 'boot-aks'
-        namespace: 'development'
+        namespace: 'develop'
         command: 'upgrade'
         chartType: 'FilePath'
         chartPath: 'springboot-chart'
