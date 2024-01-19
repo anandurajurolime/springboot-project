@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: anandurajkumarspringboot 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: anandurajkumarspringboot
+  template:
+    metadata:
+      labels:
+        app: anandurajkumarspringboot 
+    spec:
+      containers:
+        - name: anandurajkumarspringboot 
+          image: bootstrapapp.azurecr.io/anandurajkumarspringboot
+          ports:
+          - containerPort: 8080
